@@ -10,4 +10,3 @@ npm run dev
 
 ## Components
 Header, CoreValues, EventsList, LatestEvent, Main, Footer
-" > README.md
