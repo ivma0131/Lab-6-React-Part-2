@@ -1,12 +1,9 @@
-echo "# Codecraft Intranet (React)
+# Codecraft Intranet (React)
 
-MIS 372T — Tuesday Lab (React setup, components, props)
+MIS 372T — Tuesday Lab (React setup, components, props)  
+Spring 2025 — Professor Clint Tuttle
 
-## Run locally
-\`\`\`bash
+## 🚀 Run locally
+```bash
 npm install
 npm run dev
-\`\`\`
-
-## Components
-Header, CoreValues, EventsList, LatestEvent, Main, Footer
