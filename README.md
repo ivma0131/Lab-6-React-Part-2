@@ -14,8 +14,8 @@ A full-stack CRUD app built with **React (Vite)**, **Express.js**, and **MySQL (
    ```bash
    npm install
    cd server && npm install express mysql2 cors
-3. Configure DB in server/db.js
-4. Run backend then open new terminal:
-   node server/server.js
-5. Run frontend on a seperate terminal:
-   npm run dev
+3. Configure DB in ```bash server/db.js
+4. Run backend in terminal:
+   ```bash node server/server.js
+5. Open new terminal and run frontend:
+   ```bash npm run dev
