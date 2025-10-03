@@ -1,4 +1,3 @@
-```markdown
 # Employee Management App
 
 A full-stack CRUD app built with **React (Vite)**, **Express.js**, and **MySQL (AWS RDS)** for MIS 372T Lab 6.
