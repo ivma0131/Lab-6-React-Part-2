@@ -1,18 +1,20 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import EmployeeManagement from "./pages/EmployeeManagement";
 import "./App.css";
-import "./Title.js";              
-import Header from "./components/Header.jsx";
-import Main from "./components/Main.jsx";
-import Footer from "./components/Footer.jsx";
-import { myName } from "./Title.js";
 
 export default function App() {
   return (
-    <>
-      <Header name={myName} />
-      <hr />
-      <Main />
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/employees" element={<EmployeeManagement />} />
+      </Routes>
       <Footer company="Codecraft Labs" />
-    </>
+    </Router>
   );
 }

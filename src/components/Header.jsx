@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppBar, Toolbar, Typography, Button } from "@mui/material";
+import { Link } from "react-router-dom";
+import { NameContext } from "../context/NameContext";
 
-const Header = ({ name }) => {
+const Header = () => {
+  const { name } = useContext(NameContext);
+
   return (
-    <header>
-      <h1>
-        Welcome <span id="txt-red">{name}</span> to the Codecraft Labs Intranet
-      </h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="emp_mgmt.html">Employee Management</a></li>
-        </ul>
-      </nav>
-    </header>
+    <AppBar position="static" sx={{ backgroundColor: "#344e41" }}>
+      <Toolbar>
+        <Typography variant="h6" sx={{ flexGrow: 1 }}>
+          Welcome {name} to Codecraft Intranet
+        </Typography>
+        <Button color="inherit" component={Link} to="/">Home</Button>
+        <Button color="inherit" component={Link} to="/employees">Employee Management</Button>
+      </Toolbar>
+    </AppBar>
   );
 };
 
