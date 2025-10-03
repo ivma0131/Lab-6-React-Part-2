@@ -1,9 +1,21 @@
-# Codecraft Intranet (React)
+# Employee Management App
 
-MIS 372T — Tuesday Lab (React setup, components, props)  
-Spring 2025 — Professor Clint Tuttle
+A full-stack CRUD app built with **React (Vite)**, **Express.js**, and **MySQL (AWS RDS)** for MIS 372T Lab 6.
 
-## 🚀 Run locally
-```bash
-npm install
-npm run dev
+## Features
+- Context API greeting: *“Welcome [Name] to Codecraft Intranet”*
+- Employee Management with full CRUD (Add, Edit, Delete, View)
+- Material UI styling with dark background + light sections
+- Connected to AWS RDS MySQL database
+
+## Setup
+1. Clone repo
+2. Install dependencies:
+   ```bash
+   npm install
+   cd server && npm install express mysql2 cors
+3. Configure DB in server/db.js
+4. Run backend then open new terminal:
+   node server/server.js
+5. Run frontend on a seperate terminal:
+   npm run dev
