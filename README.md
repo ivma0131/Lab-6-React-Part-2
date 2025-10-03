@@ -9,13 +9,13 @@ A full-stack CRUD app built with **React (Vite)**, **Express.js**, and **MySQL (
 - Connected to AWS RDS MySQL database
 
 ## Setup
+```bash
 1. Clone repo
 2. Install dependencies:
-   ```bash
    npm install
    cd server && npm install express mysql2 cors
-3. Configure DB in ```bash server/db.js
+3. Configure DB in server/db.js
 4. Run backend in terminal:
-   ```bash node server/server.js
+   node server/server.js
 5. Open new terminal and run frontend:
-   ```bash npm run dev
+   npm run dev
